@@ -1,0 +1,33 @@
+  /* or any other theme you prefer */
+.main-container{
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border: 1px solid #ccc;
+  box-shadow: 3px 3px 3px #ccc; */
+  height: 400px;
+  width: 500px;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+
+}
+
+.main-container {
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image: url("https://i.pinimg.com/originals/9f/38/53/9f385384cf86350110d2d0029a0dcc15.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+
+}

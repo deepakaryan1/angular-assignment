@@ -1,0 +1,36 @@
+<div class="main-container">
+  <div class="container">
+    <mat-form-field >
+      <mat-label>Country</mat-label>
+      <mat-select (selectionChange)="onCountryChange($event.value)">
+        <mat-option value="">Select Country</mat-option>
+        <mat-option *ngFor="let country of firstLevelArr" [value]="country.id">{{ country.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field *ngIf="selectedCountryId" appearance="fill">
+      <mat-label>State</mat-label>
+      <mat-select (selectionChange)="onStateChange($event.value)">
+        <mat-option value="">Select State</mat-option>
+        <mat-option *ngFor="let state of states" [value]="state.id">{{ state.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field *ngIf="selectedStateId" appearance="fill">
+      <mat-label>District</mat-label>
+      <mat-select (selectionChange)="onDistrictChange($event.value)">
+        <mat-option value="">Select District</mat-option>
+        <mat-option *ngFor="let district of districts" [value]="district.id">{{ district.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field *ngIf="selectedDistrictId" appearance="fill">
+      <mat-label>Place</mat-label>
+      <mat-select>
+        <mat-option value="">Select Place</mat-option>
+        <mat-option *ngFor="let place of places" [value]="place.id">{{ place.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+

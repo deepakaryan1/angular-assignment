@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-json-tree-data',
+  templateUrl: './json-tree-data.component.html',
+  styleUrls: ['./json-tree-data.component.css']
 })
-export class AppComponent implements OnInit {
+export class JsonTreeDataComponent {
   jsonOutput: any;  // Use the CompleteData type
 
   ngOnInit() {
